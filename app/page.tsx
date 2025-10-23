@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -12,7 +10,8 @@ export default function Home() {
       <main className="flex-grow bg-white text-gray-800">
         <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="flex justify-center mb-8">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/quadrax-logo.png"
               alt="Quadrax logo"
               width={200}
