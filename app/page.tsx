@@ -1,5 +1,7 @@
 export default function Home() {
   // In production, basePath is set to /quadrax-tech-web
+  const basePathValue =
+    process.env.NODE_ENV === "production" ? "/quadrax-tech-web" : "";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -14,7 +16,7 @@ export default function Home() {
           <div className="flex justify-center mb-8">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/quadrax-logo.png"
+              src={`${basePathValue}/quadrax-logo.png`}
               alt="Quadrax logo"
               width={200}
               height={200}
