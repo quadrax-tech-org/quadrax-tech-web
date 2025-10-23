@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? "/quadrax-tech-web" : "",
+  basePath: isProd ? "/" : "",
   images: {
     unoptimized: true,
   },
